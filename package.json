@@ -5,10 +5,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
     "start": "next start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "build": "next build",
     "lint": "next lint"
   },
   "dependencies": {
@@ -38,5 +38,17 @@
     "tailwind-scrollbar": "^2.1.0-preview.0",
     "tailwindcss": "^3.1.8",
     "typescript": "4.8.4"
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "next.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VavraLuka/lukavavra.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VavraLuka/lukavavra.github.io/issues"
   }
 }
