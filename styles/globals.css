@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .heroButton {
+        @apply px-6 py-2 mx-2 border border-[#242424] rounded-full uppercase text-sm tracking-widest text-gray-500 transition-all hover:border-[#e5004e]/40 hover:text-[#e5004e]/40 duration-200
+    }
+
+    .contactInput {
+        @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#242424] text-gray-500 placeholder-gray-500 transition-all focus:border-[#e5004e]/40 focus:text-[#e5004e]/40 hover:border-[#e5004e]/40 text-sm
+    }
+
+    .experienceArticle {
+        @apply relative flex flex-col items-center space-y-7 flex-shrink-0 w-[400px] md:w-[600px] xl:w-[600px] snap-center p-10 cursor-pointer duration-300 overflow-hidden opacity-60 hover:opacity-100 bg-[#242424]
+    }
+
+    .experienceTitle {
+        @apply text-[26px] font-light
+    }
+
+    .experienceSubtitle {
+        @apply font-bold text-[20px] mt-1
+    }
+}
+
+@layer utilities {
+    .customFont {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .filterButton {
+        margin-right: 1rem;
+        min-width: 8rem;
+        padding: 0.5rem 1rem;
+        border: none;
+        background: transparent;
+        color: #e5004e;
+        border-radius: 2rem;
+        border: 2px solid #e5004e;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 200ms;
+        opacity: 0.6;
+    }
+
+    .filterButton:hover {
+        opacity: 1;
+    }
+
+    .filterButton.active {
+        background: #e5004e;
+        color: black;
+    }
+
+    .modeToggleSwitch{
+        font-size: 17px;
+        position: relative;
+        display: inline-block;
+        width: 3.5rem;
+        height: 2em;
+    }
+
+    .modeToggleSwitch input{
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .modeToggleSlider{
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #f4f4f4;
+        transition: 0.5s;
+        border-radius: 30px;
+    }
+
+    .modeToggleSlider:before{
+        position: absolute;
+        content: '';
+        height: 1.4em;
+        width: 1.4em;
+        border-radius: 20px;
+        left: 0.3em;
+        bottom: 0.3em;
+        background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+        transition: 0.5s;
+    }
+
+    input:checked + .modeToggleSlider {
+        background-color: #303136;
+    }
+
+    input:checked + .modeToggleSlider:before {
+        transform: translateX(1.5em);
+        background: #303136;
+        box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -5px 0 0 #a3dafb;
+    }
+
+    .languageToggleSwitch{
+        font-size: 17px;
+        position: relative;
+        display: inline-block;
+        width: 3.5rem;
+        height: 2em;
+    }
+
+    .languageToggleSwitch input{
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .languageToggleSlider{
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #f4f4f4;
+        transition: 0.5s;
+        border-radius: 30px;
+    }
+
+    .languageToggleSlider:before{
+        position: absolute;
+        content: '';
+        height: 1.4em;
+        width: 1.4em;
+        border-radius: 20px;
+        left: 0.3em;
+        bottom: 0.3em;
+        background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+        transition: 0.5s;
+    }
+
+    input:checked + .languageToggleSlider {
+        background-color: #303136;
+    }
+
+    input:checked + .languageToggleSlider:before {
+        transform: translateX(1.5em);
+        background: #303136;
+        box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -5px 0 0 #a3dafb;
+    }
+}
