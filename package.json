@@ -1,13 +1,10 @@
 {
-  "homepage": "https://vavraluka.github.io/lukavavra.github.io/",
   "name": "lukavavra-portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "start": "next start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "next build",
     "lint": "next lint"
   },
@@ -25,6 +22,7 @@
     "react-simple-typewriter": "^4.0.5",
     "react-social-icons": "^5.15.0",
     "save-dev": "^0.0.1-security",
+    "styled-components": "^5.3.6",
     "utf8": "^3.0.0"
   },
   "devDependencies": {
@@ -32,9 +30,9 @@
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
     "@types/react-helmet": "^6.1.5",
+    "@types/styled-components": "^5.1.26",
     "eslint": "8.25.0",
     "eslint-config-next": "12.3.1",
-    "gh-pages": "^4.0.0",
     "tailwind-scrollbar": "^2.1.0-preview.0",
     "tailwindcss": "^3.1.8",
     "typescript": "4.8.4"

@@ -46,28 +46,6 @@ function Projects({ }: Props) {
                         <p className="text-lg text-center md:text-left xl:text-left">{t("project01Description")}</p>
                     </div>
                 </article>
-
-                <article className="w-screen flex-shrink-0 snap-center flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen">
-                    <motion.div
-                        initial={{
-                            y: -300,
-                            opacity: 0
-                        }}
-                        transition={{
-                            duration: 1.2
-                        }}
-                        whileInView={{
-                            opacity: 1, y: 0
-                        }}
-                        viewport={{
-                            once: true
-                        }} className="mx-auto text-center">
-                        <Image src={googleCertificate} width="600" height="400" alt="Fundamentals of Digital Marketing: Google Certificate" /></motion.div>
-                    <div className="space-y-10 px-0 md:px-10 mx-auto max-w-6xl text-center">
-                        <h4 className="text-3xl font-light text-center"><span className="font-semibold underline decoration-[#e5004e]/50">{t("photoshop01Title01")}</span>: Photoshop</h4>
-                        <p className="text-lg text-center md:text-left xl:text-left">{t("photoshop01Description")}</p>
-                    </div>
-                </article>
             </div>
             <div className="w-full absolute top-[30%] bg-[#e5004e]/10 left-0 h-[500px] -skew-y-12" />
         </motion.div>

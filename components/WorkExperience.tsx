@@ -8,6 +8,8 @@ import cssImage from "../components/images/skills/cssImage.png";
 import reactImage from "../components/images/skills/reactjsImage.png";
 import googleImage from "../components/images/skills/googleImage.png";
 import googleadsImage from "../components/images/skills/googleadsImage.png";
+import adobePremiereImage from "../components/images/skills/adobePremiereImage.png";
+import adobeAfterEffectsImage from "../components/images/skills/adobeAfterEffectsImage.png"
 import { useTranslation } from "react-i18next";
 
 type Props = {};
@@ -291,6 +293,73 @@ function WorkExperience({ }: Props) {
               <li>{t("digitalMarketingLine01")}</li>
               <li>{t("digitalMarketingLine02")}</li>
               <li>{t("digitalMarketingLine03")}</li>
+            </motion.ul>
+          </div>
+        </article>
+
+        {/* Video editing & Visual Effects */}
+        <article className="experienceArticle">
+          <motion.div
+            initial={{
+              y: -150,
+              opacity: 0,
+            }}
+            transition={{
+              duration: 1.2,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            viewport={{
+              once: true,
+            }}
+            className="flex relative flex-row md:w-[350px] md:h-[150px] xl:w-[350px] xl:h-[200px] md:p-5 items-center justify-evenly gap-10"
+          >
+            <Image
+              src={adobePremiereImage}
+              alt="Google"
+              objectFit="cover"
+              priority
+              quality="80"
+            />
+            <Image
+              src={adobeAfterEffectsImage}
+              alt="Google Ads"
+              objectFit="cover"
+              priority
+              quality="80"
+            />
+          </motion.div>
+
+          <div className="px-0 md:px-10">
+            <motion.h4
+              initial={{ opacity: 0, x: 300 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="experienceTitle"
+            >
+              {t("videoEditingTitle")}
+            </motion.h4>
+            <motion.p
+              initial={{ opacity: 0, x: -200 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="experienceSubtitle"
+            >
+              Adobe Premiere Pro, Adobe After Effects
+            </motion.p>
+            <motion.ul
+              initial={{ opacity: 0, x: 200 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="list-disc space-y-4 mt-8 ml-5 text-md max-h-96 overflow-y-scroll scrollbar-thin scrollbar-track-black scrollbar-thumb-[#e5004e]/80 w-4/5 xl:mx-auto"
+            >
+              <li>{t("videoEditingLine01")}</li>
+              <li>{t("videoEditingLine02")}</li>
             </motion.ul>
           </div>
         </article>

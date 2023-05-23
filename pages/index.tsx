@@ -42,11 +42,11 @@ const Home = ({ }: Props) => {
           <Skills />
         </section>
 
-        <section id="projects" className="snap-start croll-smooth">
+        <section id="projects" className="snap-start scroll-smooth">
           <Projects />
         </section>
 
-        <section id="contact" className="scroll-smooth snap-start">
+        <section id="contact" className="snap-start scroll-smooth">
           <ContactMe />
         </section>
 

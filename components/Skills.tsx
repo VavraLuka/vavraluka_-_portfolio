@@ -23,7 +23,7 @@ function Skills({ }: Props) {
             <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">{t("skills")}</h3>
             <h3 className="top-36 absolute uppercase tracking-[3px] text-gray-500 text-sm">{t("skillsTitle")}</h3>
 
-            <div className="grid xl:grid-cols-7 md:grid-cols-6 grid-cols-5  gap-3 xl:gap-5 pt-12">
+            <div className="grid xl:grid-cols-7 md:grid-cols-6 grid-cols-5  gap-3 xl:gap-7 pt-12">
                 <Skill image={'/skills/aftereffectsSkill.png'} altImage={'Adobe After Effects'} />
                 <Skill image={'/skills/cssSkill.png'} altImage={'CSS'} />
                 <Skill image={'/skills/davinciresolveSkill.png'} altImage={'DaVinci Resolve Studio'} />
